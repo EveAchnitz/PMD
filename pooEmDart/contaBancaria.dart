@@ -19,16 +19,16 @@ class ContaBancaria {
 
   double get saldo => _saldo!;
 
-  set saldo(double value){
-    if(value < 0){
+  set saldo(double saldo){
+    if(saldo < 0){
       print("Não é possível registrar um saldo negativo.");
     }
-    _saldo = value;
+    _saldo = saldo;
   }
 }
 
-void main(){
-  ContaBancaria contaBancaria1 = new ContaBancaria.nomeado("José Azevedo", -5000);
+void contaBancaria(){
+  ContaBancaria contaBancaria1 = new ContaBancaria.nomeado("José Azevedo", 5000);
 
   print('''${contaBancaria1.titular} tem ${contaBancaria1.saldo} reais na conta.''');
 }

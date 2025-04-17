@@ -10,7 +10,7 @@ class Produto{
 
   Produto.nomeado(this.nome, this.preco);
 }
-  void main(){
+  void produto(){
     //Primeiro produto usando o construtor padrão
     Produto produto = new Produto();
     produto.nome = "Lápis";

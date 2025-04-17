@@ -26,7 +26,7 @@ class Funcionario{
   }
 }
 
-void main(){
+void funcionario(){
   Funcionario funcionario1 = new Funcionario.nomeado("Joana", -3500);
 
   print("${funcionario1._nome} possui um salário de ${funcionario1.salario} reais.");
